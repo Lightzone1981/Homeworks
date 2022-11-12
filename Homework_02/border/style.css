@@ -1,0 +1,9 @@
+.block {
+	width: 400px;
+	background-color: #B2D235;
+	outline: 2px solid #fff;
+	outline-offset: -20px;
+	margin: 0% auto;
+	padding: 40px 40px;
+	
+}

@@ -1,0 +1,35 @@
+body {
+  counter-reset: product-counter;
+}
+
+.fruits-price-list__product {
+  counter-increment: product-counter;
+}
+
+.fruits-prise-list th {
+  color: blue;
+  font-size: 1.2rem;
+}
+
+.fruits-prise-list {
+  border-collapse: collapse;
+}
+.fruits-prise-list td {
+  border: 1px solid rgb(223, 223, 223);
+  width: 8rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.fruits-prise-list tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.fruits-prise-list tfoot {
+  font-weight: bold;
+  background-color: rgb(170, 170, 170);
+}
+
+.fruits-price-list__total::before {
+  content: counter(product-counter) " positions";
+}

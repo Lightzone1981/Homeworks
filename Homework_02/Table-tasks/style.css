@@ -1,0 +1,25 @@
+.table-ninja-turtles{
+	border-collapse: collapse;
+}
+
+.table-ninja-turtles td, .table-ninja-turtles th{
+	border: 1px solid #000;
+}
+
+.table-ninja-turtles--backgound-gray {
+	border-collapse: collapse;
+}
+.table-ninja-turtles--backgound-gray td{
+	background-color: #ececec;
+	padding: 0.5rem;
+	border: 1px solid #000;
+
+}	
+
+.table-ninja-turtles--backgound-green {
+	border-spacing: 4px;
+}
+.table-ninja-turtles--backgound-green td{
+	background-color: #4c715b;
+	padding: 25px;
+}
