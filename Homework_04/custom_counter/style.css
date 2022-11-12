@@ -6,9 +6,11 @@ body {
   counter-increment: product-counter;
 }
 
-.fruits-prise-list th {
-  color: blue;
+th {
+  color: rgb(12, 12, 161);
   font-size: 1.2rem;
+  background-color: #fff;
+  text-align: left;
 }
 
 .fruits-prise-list {
