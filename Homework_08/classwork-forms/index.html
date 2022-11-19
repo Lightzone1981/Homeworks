@@ -36,7 +36,7 @@
 				<label for="contact-form-name">Имя</label>
 			</div>
 			<div class="contact-form__container">
-				<input class="contact-form__name" name="contact-form-name" type="text">
+				<input class="contact-form__name" id="contact-form-name" type="text">
 			</div>
 		</div>
 		<div class="contact-form__wrapper">
@@ -44,7 +44,7 @@
 				<label for="contact-form-surname">Фамилия</label>
 			</div>
 			<div class="contact-form__container">
-				<input class="contact-form__surname" name="contact-form-surname" type="text">
+				<input class="contact-form__surname" id="contact-form-surname" type="text">
 			</div>
 		</div>
 		<div class="contact-form__wrapper">
@@ -52,7 +52,7 @@
 				<label for="contact-form-adress">Адресс</label>
 			</div>
 			<div class="contact-form__container">
-				<input class="contact-form__adress" name="contact-form-adress" type="text">
+				<input class="contact-form__adress" id="contact-form-adress" type="text">
 			</div>
 		</div>
 		<div class="contact-form__wrapper">
@@ -67,7 +67,7 @@
 	<form class="form3" action="">
 		<h2 class="form3__header">Добро пожаловать!</h2>
 		<div class="form3__wrapper">
-			<input class='form3__input form3__login ' name='form3-log' type="text" placeholder="Логин" value="" autofocus
+			<input class='form3__input form3__login ' name='form3-log' type="text" placeholder="Логин" value="" 
 				required>
 		</div>
 
@@ -75,7 +75,7 @@
 			<input class='form3__input form3__password' name='form3-pas' type="text" placeholder="Пароль" required>
 		</div>
 		<label class='form3__remember-label' for="form3-remember">
-			<input class="form3__remember" name="form3-remember" type="checkbox">
+			<input class="form3__remember" name="form3-remember" id='form3-remember' type="checkbox">
 			Запомнить меня
 		</label>
 		<div class="form3__wrapper">
@@ -91,7 +91,7 @@
 				<label for="form4-name">Имя *</label>
 			</div>
 			<div class="form4__container">
-				<input class="form4__name" name="form4-name" type="text" required>
+				<input class="form4__name" id="form4-name" type="text" required>
 			</div>
 		</div>
 		<div class="form4__wrapper">
@@ -99,7 +99,7 @@
 				<label for="form4-surname">Фамилия</label>
 			</div>
 			<div class="form4__container">
-				<input class="form4__surname" name="form4-surname" type="text">
+				<input class="form4__surname" id="form4-surname" type="text">
 			</div>
 		</div>
 		<div class="form4__wrapper">
@@ -107,7 +107,7 @@
 				<label for="form4-email">Email *</label>
 			</div>
 			<div class="form4__container">
-				<input class="form4__email" name="form4-adress" type="email" required>
+				<input class="form4__email" id="form4-email" type="email" required>
 			</div>
 		</div>
 
@@ -116,13 +116,13 @@
 				<label for="form4-message">Message</label>
 			</div>
 			<div class="form4__container">
-				<textarea class="form4__message" name="form4-message"></textarea>
+				<textarea class="form4__message" id="form4-message"></textarea>
 			</div>
 		</div>
 
 		<div class="form4__wrapper">
 			<div class="form4__container">
-				<input class="form4__submit" name="form4-submit" type="submit" value="Отправить">
+				<input class="form4__submit" id="form4-submit" type="submit" value="Отправить">
 			</div>
 		</div>
 	</form>
