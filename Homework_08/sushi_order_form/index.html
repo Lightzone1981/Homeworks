@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Sushi order form</title>
+</head>
+
+<body>
+	<form class='form' name="form-order" action="#">
+		<header class="form__header">
+			<h2 class="form__title">Ваши данные</h2>
+		</header>
+		<div class="form__body">
+			<fieldset class="form__fieldset">
+				<div class="form__row">
+					<input class="form__phone" name='form-phone' type="tel" placeholder="Телефон">
+					<input class="form__name" name="form-name" type="text" placeholder="Имя">
+				</div>
+				<div class="form__row form__row-radio">
+					<input class="form__pay" name="form-pay" id='cash' type="radio" checked>
+					<label for="cash" class="form__radio-label form__radio-label--left">Наличными</label>
+					<input class="form__pay" name="form-pay" id='card' type="radio">
+					<label for="card" class="form__radio-label form__radio-label--right">Картой</label>
+				</div>
+				<div class="form__row form__row-checkbox">
+					<input class="form__change" name="form-change" id='change' type="checkbox">
+					<label for="change" class="form__check-label">Подготовить сдачу с</label>
+					<input class="form__sum" name='form-sum' type="text" placeholder="Сумма">
+				</div>
+				<div class="form__row">
+					<input class="form__comment" name='form-comment' type="text" placeholder="Комментарий к заказу">
+				</div>
+				<div class="form__row form__row--number">
+					<label for="sticks" class="form__sticks-label">Палочки для еды (шт)</label>
+					<input class="form__sticks" name='form-sticks' id='sticks' type="number" min="0" max="5" step="1"
+						value="2">
+				</div>
+				<div class="form__row form__row--number">
+					<label for="sauce" class="form__sauce-label">Соусник (шт)</label>
+					<input class="form__sauce" name='form-sauce' id='sauce' type="number" min="0" max="5" step="1"
+						value="2">
+				</div>
+				<div class="form__row">
+					<input class="form__promo" name='form-promo' type="text" placeholder="Введите промокод">
+				</div>
+			</fieldset>
+			<fieldset class="form__fieldset">
+				<div class="form__row form__row-radio">
+					<input class="form__delivery" name="form-delivery" id='courier' type="radio" checked>
+					<label for="courier" class="form__radio-label form__radio-label--left">Курьером</label>
+					<input class="form__delivery" name="form-delivery" id='himself' type="radio">
+					<label for="himself" class="form__radio-label form__radio-label--right">Самовывоз</label>
+				</div>
+				<div class="form__row form__row-adress">
+					<input class="form__street" name='form-street' type="text" placeholder="Улица">
+					<input class="form__house" name='form-house' type="text" placeholder="Дом">
+				</div>
+				<div class="form__row form__row-adress">
+					<input class="form__flatnumber" name='form-flatnumber' type="text" placeholder="Кв">
+					<input class="form__porch" name='form-porch' type="text" placeholder="Подъезд">
+					<input class="form__floor" name='form-floor' type="text" placeholder="Этаж">
+					<input class="form__access-code" name='form-access-code' type="text" placeholder="Код">
+				</div>
+				<div class="form__row form__row-radio">
+					<input class="form__time" name="form-time" id='now' type="radio" checked>
+					<label for="now" class="form__radio-label form__radio-label--left">Побыстрее</label>
+					<input class="form__time" name="form-time" id="at-time" type="radio">
+					<label for="at-time" class="form__radio-label form__radio-label--right">Ко времени</label>
+				</div>
+				<div class="form__row">
+					<input class="form__email" name='form-email' type="email" placeholder="Email (необязательно)">
+				</div>
+
+			</fieldset>
+		</div>
+		<footer class="form__footer">
+			<input class='form__submit' type="submit" value="Оформить заказ">
+			<p class="form__warning">Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку
+				персональных данных в соответствии с
+				<a href="" class="form__warning-link">Публичной оффертой</a>
+			</p>
+		</footer>
+	</form>
+</body>
+
+</html>

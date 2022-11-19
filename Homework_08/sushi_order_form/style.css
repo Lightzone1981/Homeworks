@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "reset.css";
+@import "normalize.css";
+
+* {
+  font-family: roboto;
+  color: #000;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.form {
+  width: 53rem;
+  margin: 0 auto;
+}
+
+.form__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__row-radio,
+.form__row-checkbox {
+  gap: 0;
+  position: relative;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 0.5rem;
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+.form__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.form__body {
+  padding-bottom: 2rem;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  width: 49%;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ff9846;
+  color: #fff;
+}
+
+.form__radio-label {
+  width: 50%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.form__radio-label:hover {
+  cursor: pointer;
+}
+
+.form__radio-label--right {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.form__radio-label--left {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.form__radio-label[for="cash"]::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(./cash_icon_black.svg) no-repeat;
+  left: 2rem;
+}
+
+input[type="radio"]:checked + .form__radio-label[for="cash"]::before {
+  background: url(./cash_icon_white.svg) no-repeat;
+}
+
+.form__radio-label[for="card"]::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 18px;
+  background: url(./card_icon_black.svg) no-repeat;
+  left: 15.6rem;
+}
+
+input[type="radio"]:checked + .form__radio-label[for="card"]::before {
+  background: url(./card_icon_white.svg) no-repeat;
+}
+
+.form__change {
+  opacity: 0;
+}
+
+.form__check-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 22px;
+  height: 22px;
+  background: url(./check_off_icon.svg) no-repeat;
+}
+
+.form__change:checked + .form__check-label::before {
+  background: url(./check_on_icon.svg) no-repeat;
+}
+
+.form__check-label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.form__comment,
+.form__promo,
+.form__email {
+  flex-grow: 1;
+}
+
+.form__row--number {
+  justify-content: flex-end;
+}
+
+.form__sticks,
+.form__sauce {
+  background-color: transparent;
+}
+
+.form__sticks::-webkit-inner-spin-button,
+.form__sauce::-webkit-inner-spin-button {
+  appearance: block;
+  opacity: 1;
+}
+
+.form__submit {
+  background-color: #f46d40;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: inline-block;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.form__submit:hover {
+  cursor: pointer;
+  background-color: #ff9846;
+}
+
+.form__warning {
+  font-size: 0.8rem;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.form__warning-link {
+  color: #000;
+}
