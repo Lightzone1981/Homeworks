@@ -1,0 +1,288 @@
+body{
+	background-color: rgb(104, 146, 25);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+/* styles for validare form */
+
+.validate-form {
+	position: relative;
+	background-color: #fff;
+	margin: 0 auto;
+	box-shadow: 0 0 5px #000;
+	max-width: 20%;
+	min-width: 18rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.validate-form__input{
+	box-sizing: border-box;
+	width: 100%;
+	padding:1rem;
+	margin: 0.5rem 0;
+	border: none;
+	outline: 1px solid rgb(223, 223, 223);;
+}
+
+.validate-form__input:focus{
+	outline-color: rgb(43, 43, 43);
+	box-shadow: 0 0 0.5rem rgb(180, 180, 180);
+}
+
+.validate-form__login:valid, .validate-form__password:valid{
+	background-color: rgb(243, 255, 241);
+	
+}
+
+.validate-form__login:invalid, .validate-form__password:invalid{
+	background-color: rgb(255, 241, 241);
+}
+
+.validate-form__wrapper:first-child:after, 
+.validate-form__wrapper:nth-child(2):after{
+	content: '*';
+	position: absolute;
+	top: 25%;
+	right: 7%;
+	width: 25px;
+	height: 0;
+	font-size: 20px;
+	color:red;
+}
+
+.validate-form__wrapper:nth-child(2):after{
+top:50%;
+}
+
+.validate-form__submit:hover{
+	cursor: pointer;
+	background-color: rgb(212, 212, 212);
+}
+
+/* styles for contact form */
+
+.contact-form {
+	background-color: #fff;
+	margin: 0 auto;
+	width: 18rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form__wrapper {
+	display: flex;
+	justify-content:flex-end;
+	align-items: baseline;
+}
+
+.contact-form__wrapper:last-child {
+	justify-content:flex-end;
+}
+
+.contact-form__label-container{
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.contact-form__container{
+	flex-shrink: 0;
+	display: flex;
+	width: 70%;
+}
+
+.contact-form label{
+	margin-right: 1rem;
+}
+
+.contact-form__name, .contact-form__surname, .contact-form__adress{
+	width: 100%;
+	padding:0.5rem;
+	margin: 0.5rem 0;
+	background-color: antiquewhite;
+	border: none;
+	outline: 1px solid #bdbdbd;
+}
+
+.contact-form__name:focus, .contact-form__surname:focus, .contact-form__adress:focus{
+	background-color: #fff;
+}
+.contact-form__submit:focus{
+	outline: 1px solid #fff;
+}
+
+.contact-form__submit-wrapper{
+	width: 50%;
+	border: 1px solid rgb(197, 25, 25);
+}
+.contact-form__submit {
+	padding:0.5rem 1rem;
+	margin: 0.5rem 0;
+	border-radius: 1rem;
+	border: 3px solid antiquewhite;
+	background-color: rgb(158, 114, 49);
+	color: #fff;
+}
+
+.contact-form__submit:hover {
+	cursor: pointer;
+	background-color: rgb(134, 96, 38);
+}
+
+/* styles for form3 */
+
+.form3 {
+	position: relative;
+	background-color: #fff;
+	margin: 0 auto;
+	box-shadow: 0 0 5px #000;
+	max-width: 20%;
+	min-width: 15rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.form3__header{
+margin: 0 auto;
+}
+
+.form3__input{
+	box-sizing: border-box;
+	width: 100%;
+	padding:1rem;
+	margin: 0.5rem 0;
+	border: none;
+	outline: 1px solid rgb(223, 223, 223);;
+}
+
+.form3__input:focus{
+	outline-color: rgb(43, 43, 43);
+	box-shadow: 0 0 0.5rem rgb(180, 180, 180);
+}
+
+.form3__login:valid, .form3__password:valid{
+	background-color: rgb(243, 255, 241);
+	
+}
+
+.form3__login:invalid, .form3__password:invalid{
+	background-color: rgb(255, 241, 241);
+}
+
+.form3__wrapper:first-of-type:after, 
+.form3__wrapper:nth-of-type(2):after{
+	content: '*';
+	position: absolute;
+	top: 28%;
+	right: 7%;
+	width: 25px;
+	height: 0;
+	font-size: 20px;
+	color:red;
+}
+
+.form3__wrapper:nth-child(2):after{
+top:49%;
+}
+
+.form3__remember-label{
+	margin:0 0 0 auto;
+	font-style: italic;
+}
+
+.form3__submit{
+background-color: rgb(160, 115, 84);
+color: #fff;
+}
+.form3__submit:hover{
+	cursor: pointer;
+	background-color: rgb(150, 109, 82);
+}
+
+/* styles for form4 */
+
+
+.form4 {
+	background-color: rgb(54, 47, 151);
+	margin: 0 auto;
+	width: 35rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.form4__wrapper {
+	display: flex;
+	justify-content:flex-end;
+	align-items: baseline;
+}
+
+.form4__wrapper:last-child {
+	justify-content:flex-end;
+}
+
+.form4__label-container{
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.form4__container{
+	flex-shrink: 0;
+	display: flex;
+	width: 70%;
+}
+
+.form4 label{
+	margin-right: 1rem;
+	color:rgb(141, 141, 248)
+}
+
+.form4__name, .form4__surname, .form4__email, .form4__message{
+	width: 100%;
+	padding:0.5rem;
+	margin: 0.5rem 0;
+	background-color: rgb(37, 32, 59);
+	border: none;
+	outline: none;
+	color:rgb(141, 141, 248);
+}
+
+.form4__message{
+	resize: none;
+	height: 10rem;
+	overflow-y:scroll;
+}
+
+.form4__name:focus, .form4__surname:focus, .form4__email:focus, .form4__message:focus{
+	background-color: rgb(90, 26, 199);
+	
+}
+.form4__submit:focus{
+	outline: 1px solid #fff;
+}
+
+.form4__submit-wrapper{
+	width: 50%;
+	border: 1px solid rgb(197, 25, 25);
+}
+.form4__submit {
+	padding:0.5rem 1rem;
+	margin: 0.5rem 0;
+	background-color: rgb(17, 23, 116);
+	color: #fff;
+	border: none;
+}
+
+.form4__submit:hover {
+	cursor: pointer;
+	background-color: rgb(110, 41, 230);
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Forms</title>
+</head>
+
+<body>
+
+	<form class="validate-form" action="">
+
+		<div class="validate-form__wrapper">
+			<input class='validate-form__input validate-form__login ' name='log' type="text" placeholder="Логин" value=""
+				autofocus required>
+		</div>
+
+		<div class="validate-form__wrapper">
+			<input class='validate-form__input validate-form__password' name='pas' type="text" placeholder="Пароль"
+				required>
+		</div>
+
+		<div class="validate-form__wrapper">
+			<input class='validate-form__input validate-form__submit' name='sub' type="submit" value="Войти">
+		</div>
+	</form>
+
+	<br>
+
+	<form class="contact-form" action="">
+		<div class="contact-form__wrapper">
+			<div class="contact-form__label-container">
+				<label for="contact-form-name">Имя</label>
+			</div>
+			<div class="contact-form__container">
+				<input class="contact-form__name" name="contact-form-name" type="text">
+			</div>
+		</div>
+		<div class="contact-form__wrapper">
+			<div class="contact-form__label-container">
+				<label for="contact-form-surname">Фамилия</label>
+			</div>
+			<div class="contact-form__container">
+				<input class="contact-form__surname" name="contact-form-surname" type="text">
+			</div>
+		</div>
+		<div class="contact-form__wrapper">
+			<div class="contact-form__label-container">
+				<label for="contact-form-adress">Адресс</label>
+			</div>
+			<div class="contact-form__container">
+				<input class="contact-form__adress" name="contact-form-adress" type="text">
+			</div>
+		</div>
+		<div class="contact-form__wrapper">
+			<div class="contact-form__container">
+				<input class="contact-form__submit" type="submit" value="Отправить">
+			</div>
+		</div>
+	</form>
+
+	<br>
+
+	<form class="form3" action="">
+		<h2 class="form3__header">Добро пожаловать!</h2>
+		<div class="form3__wrapper">
+			<input class='form3__input form3__login ' name='form3-log' type="text" placeholder="Логин" value="" autofocus
+				required>
+		</div>
+
+		<div class="form3__wrapper">
+			<input class='form3__input form3__password' name='form3-pas' type="text" placeholder="Пароль" required>
+		</div>
+		<label class='form3__remember-label' for="form3-remember">
+			<input class="form3__remember" name="form3-remember" type="checkbox">
+			Запомнить меня
+		</label>
+		<div class="form3__wrapper">
+			<input class='form3__input form3__submit' name='form3-sub' type="submit" value="Войти">
+		</div>
+	</form>
+
+	<br>
+
+	<form class="form4" action="">
+		<div class="form4__wrapper">
+			<div class="form4__label-container">
+				<label for="form4-name">Имя *</label>
+			</div>
+			<div class="form4__container">
+				<input class="form4__name" name="form4-name" type="text" required>
+			</div>
+		</div>
+		<div class="form4__wrapper">
+			<div class="form4__label-container">
+				<label for="form4-surname">Фамилия</label>
+			</div>
+			<div class="form4__container">
+				<input class="form4__surname" name="form4-surname" type="text">
+			</div>
+		</div>
+		<div class="form4__wrapper">
+			<div class="form4__label-container">
+				<label for="form4-email">Email *</label>
+			</div>
+			<div class="form4__container">
+				<input class="form4__email" name="form4-adress" type="email" required>
+			</div>
+		</div>
+
+		<div class="form4__wrapper">
+			<div class="form4__label-container">
+				<label for="form4-message">Message</label>
+			</div>
+			<div class="form4__container">
+				<textarea class="form4__message" name="form4-message"></textarea>
+			</div>
+		</div>
+
+		<div class="form4__wrapper">
+			<div class="form4__container">
+				<input class="form4__submit" name="form4-submit" type="submit" value="Отправить">
+			</div>
+		</div>
+	</form>
+
+</body>
+
+</html>
