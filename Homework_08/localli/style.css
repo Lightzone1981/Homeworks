@@ -16,16 +16,46 @@
   min-width: 24rem;
 }
 .show-order {
+	position: relative;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
 }
+
+.show-order::before {
+	content:'';
+	position: absolute;
+	z-index: 10;
+	top:1.8rem;
+	left:0;
+	width: 1.31rem;
+	height: 1.25rem;
+	background-image: url(./cart.svg);
+	background-position: center;
+}
+
 .show-order__button {
   background-color: transparent;
   border: none;
   font-size: 1.3rem;
+  padding: 0 0.5rem 0 2rem;
 }
+
+.show-order__button:focus{
+	outline: none;
+}
+
+.show-order__button:hover {
+	cursor: pointer;
+	color:#777;
+}
+
+.show-order__button:hover::after{
+	opacity: 0.5;
+}
+
+
 .show-order__price {
   font-size: 1.5rem;
   font-weight: bold;
@@ -35,8 +65,9 @@
   padding: 0;
   display: flex;
   list-style-type: none;
+  padding: 1.7rem 0;
 }
-.breadcrumbs__item {
+.breadcrumbs__link {
   font-size: 0.8rem;
   margin-right: 1.5rem;
   text-decoration: none;
@@ -48,18 +79,7 @@
   font-weight: bold;
 }
 
-.breadcrumbs__item:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  background-image: url(./arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 6px;
-  height: 9px;
-  top: 0.2rem;
-  left: 5.8em;
-}
-
+.breadcrumbs__item:nth-child(2)::before, 
 .breadcrumbs__item:nth-child(2)::after {
   content: "";
   position: absolute;
@@ -68,8 +88,12 @@
   background-position: center;
   width: 6px;
   height: 9px;
-  top: 0.2rem;
-  left: 11.7em;
+  top: 2.1rem;
+  left: 4.8em;
+}
+
+.breadcrumbs__item:nth-child(2)::after {
+  left: 9.2em;
 }
 
 .form__set {
@@ -116,6 +140,10 @@
 .form__change-button:hover {
   cursor: pointer;
   color: #999;
+}
+
+.form__change-button:focus{
+	outline: none;
 }
 
 .form__button {
