@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Localli</title>
+</head>
+<body>
+	<section class="delivery">
+		<div class="container">
+			<main class="main">
+				<div class="show-order">
+					<button class="show-order__button">Show order summary</button>
+					<p class="show-order__price">$54.57</p>
+				</div>
+				<ul class="breadcrumbs">
+					<a class="breadcrumbs__item" href="#">Information</a>
+					<a class="breadcrumbs__item" href="#">Shipping</a>
+					<a class="breadcrumbs__item" href="#">Payment</a>
+				</ul>
+
+				<form class="form" action="" >
+					<fieldset class="form__set">
+						<div class="form__wrapper">
+							<label for="contact" class="form__label">Contact
+								<input class="form__input" id='contact' type="text" value="join@mail.com">
+							</label>
+								<button class="form__change-button">Change</button>
+						</div>
+						
+						<div class="form__wrapper">
+							<label for="adress" class="form__label">Ship to
+								<input class="form__input" id='adress' type="text" value="152 ne 10th st. Miami FL 33030, United States">
+							</label>
+								<button class="form__change-button">Change</button>
+						</div>
+					</fieldset>
+
+					<h3 class="form__header">Shipping method</h3>
+
+					<fieldset class="form__set form__set-second">
+						<div class="form__wrapper">
+							<input class="form__radio" name='method' id='standart' type="radio">
+							<label class="form__radio-label" for="standart">
+								<div class="form__custom-radio"></div>
+								<span class="form__radio-label-text">Standart</span>
+								<p class="form__method-description">Free</p>
+							</label>
+							
+						</div>
+						<div class="form__wrapper">
+							<input class="form__radio" name='method' id='expedited' type="radio">
+							<label class="form__radio-label" for="expedited">
+								<div class="form__custom-radio"></div>
+								<span class="form__radio-label-text">Expedited</span>
+							<p class="form__method-description">$8.90</p>
+							</label>
+						</div>
+						<div class="form__wrapper">
+							<input class="form__radio" name='method' id='same-day' type="radio" checked>
+							<label class="form__radio-label" for="same-day">
+								<div class="form__custom-radio"></div>
+								<span class="form__radio-label-text">Same-Day Delivery with Localli</span>
+								<p class="form__method-description">$12.00</p>
+							</label>
+						</div>
+					</fieldset>
+						<input class="form__button" type="submit" value="Continue for payment">
+				</form>
+			</main>
+			<aside class="aside">
+				<h2 class="aside__header">Affordable delivery without the wait.</h2>
+				<h5 class="aside__subtitle">For the same price as most standard shipping options, it’s time to upgrade your customer purchasing experience and increase your conversion rates, today!</h5>
+			</aside>
+		</div>
+	</section>
+</body>
+</html>
