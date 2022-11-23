@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+$point1: 1024px;
+$point2: 768px;
+
+
+.block {
+	background-color: rgb(163, 57, 57);
+	color: #fff;
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 75rem;
+
+	.container-1{
+		display: flex;
+		justify-content: center;
+		.block-1 {
+			flex-basis: calc(100% / 12 * 12 - 2rem);
+		}
+		padding-bottom: 2rem;
+	}
+
+	.container-2 {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 2rem;
+
+		.container-3 {
+			flex-basis: calc(100% / 12 * 8);
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			@media (max-width: $point1){
+				flex-basis: calc(100% / 12 * 12);
+				padding-bottom: 2rem;
+			}
+			@media (max-width: $point2){
+				padding-bottom: 0;
+			}
+
+			.block-2 {
+				flex-basis: calc(100% / 12 * 12 - 2rem);
+				margin-bottom: 2rem;
+				@media (max-width: $point1){
+					flex-basis: calc(100% / 12 * 4 - 2rem);
+					margin-bottom: 0;
+				}
+				@media (max-width: $point2){
+					flex-basis: calc(100% / 12 * 12 - 2rem);
+					margin-bottom: 2rem;
+				}
+			}
+
+			.block-3, .block-4 {
+				flex-basis: calc(100% / 12 * 6 - 2rem);
+				@media (max-width: $point1){
+					flex-basis: calc(100% / 12 * 4 - 2rem);
+				}
+				@media (max-width: $point2){
+					flex-basis: calc(100% / 12 * 6 - 2rem);
+					margin-bottom: 2rem;
+				}
+				@media (max-width: $point2) and (orientation:landscape) {
+					flex-basis: calc(100% / 12 * 12 - 2rem);
+					margin-bottom: 2rem;
+				}
+			}
+		}
+
+		.block-5{
+			flex-basis: calc(100% / 12 * 4 - 2rem);
+			margin: 0 auto;
+			@media (max-width: $point1){
+				flex-basis: calc(100% / 12 * 12 - 2rem);
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

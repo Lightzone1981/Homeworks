@@ -119,6 +119,7 @@ input[type="radio"]:checked + .form__radio-label[for="card"]::before {
   background: url(./card_icon_white.svg) no-repeat;
 }
 
+
 .form__change {
   opacity: 0;
 }
